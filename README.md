@@ -25,3 +25,7 @@ Decentralized website host
 **Why this repo?**
 
 It has "routing" so your links won't reload the page. Notice how each page loads instantly.
+
+# Credits
+
+Thanks to Meteor and meteor-dapp-wallet for providing most of the code
