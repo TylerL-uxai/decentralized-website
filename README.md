@@ -1,6 +1,6 @@
 # decentralized-website
 
-Star the repository. Type the following in terminal:
+Star the repository. [Install swarm](https://swarm-guide.readthedocs.io/en/latest/installation.html). Type the following in terminal:
 
 git clone https://github.com/TylerL-uxai/decentralized-website.git
 
