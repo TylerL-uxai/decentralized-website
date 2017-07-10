@@ -1,63 +1,55 @@
 <head>
-  <title>dapp</title>
+  <title>Decentralized Website</title>
+
+  <style>
+  .link-bg{
+    background-color: lightyellow;
+  }
+  </style>
 </head>
 
 <body id="__blaze-root">
-  <h1>Welcome to Meteor!</h1>
+  <h1>Company Name<br>
+    <small>Tagline (What makes us special)</small>
+  </h1>
 
-  {{> hello}}
-  {{> info}}
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
-
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
-</template>
-
 <template name="layout_main">
-
-	<!-- <div class="dapp-grid"></div> -->
-
-	<header class="dapp-header">
-    header test
+  <!-- primary navigation -->
+	<header>
 		{{> Template.dynamic template=header}}
 	</header>
-
-	<div class="dapp-flex-content">
-
-		<!-- content -->
-		<main class="dapp-content">
-      main test
-			{{> Template.dynamic template=main}}
-		</main>
-
-	</div>
+	<!-- content -->
+	<main>
+		{{> Template.dynamic template=main}}
+	</main>
 </template>
 
 <template name="layout_notFound">
-    <main class="dapp-content">
+    <main>
         <h1>Nothing here...</h1>
     </main>
 </template>
 
 <template name="layout_header">
-    <nav>
-      <a href="/contracts">
-          Link
-      </a>
+    <nav class="link-bg">
+      <ul>
+        <li><a href="/">Who I am</a></li>
+        <li><a href="/examples">Examples of Some Work</a></li>
+        <li><a href="/about">About Me</a></li>
+      </ul>
     </nav>
 </template>
 
-<template name="views_contracts">
-contracts
+<template name="views_what_I_do">
+  This is a paragraph about what I do.
+</template>
+
+<template name="views_about_us">
+  This is a paragraph about us.
+</template>
+
+<template name="views_examples">
+  Examples of some work
 </template>
