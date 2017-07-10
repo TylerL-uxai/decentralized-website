@@ -19,7 +19,9 @@ Go to http://swarm-gateways.net/bzz:/3a87eee553a310ca6adaa4f28ebf5df817542b0c648
 # FAQ
 
 What is swarm?
-It's a decentralized website host
+
+Decentralized website host
 
 Why this repo?
-It has routing so your links won't reload the page.
+
+It has "routing" so your links won't reload the page. Notice how each page loads instantly.
