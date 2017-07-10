@@ -2,7 +2,7 @@
   <title>dapp</title>
 </head>
 
-<body>
+<body id="__blaze-root">
   <h1>Welcome to Meteor!</h1>
 
   {{> hello}}
@@ -22,4 +22,42 @@
     <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
     <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
   </ul>
+</template>
+
+<template name="layout_main">
+
+	<!-- <div class="dapp-grid"></div> -->
+
+	<header class="dapp-header">
+    header test
+		{{> Template.dynamic template=header}}
+	</header>
+
+	<div class="dapp-flex-content">
+
+		<!-- content -->
+		<main class="dapp-content">
+      main test
+			{{> Template.dynamic template=main}}
+		</main>
+
+	</div>
+</template>
+
+<template name="layout_notFound">
+    <main class="dapp-content">
+        <h1>Nothing here...</h1>
+    </main>
+</template>
+
+<template name="layout_header">
+    <nav>
+      <a href="/contracts">
+          Link
+      </a>
+    </nav>
+</template>
+
+<template name="views_contracts">
+contracts
 </template>
