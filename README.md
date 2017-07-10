@@ -1,5 +1,9 @@
 # decentralized-website
 
+Star the repository. Type the following in terminal:
+
+git clone https://github.com/TylerL-uxai/decentralized-website.git
+
 npm install -g meteor-build-client
 
 cd decentralized-website
